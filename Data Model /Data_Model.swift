@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class Data_Model{
+    var hour : Int? = 0
+    var minutes : Int? = 0
+    var spot : String? = ""
+}

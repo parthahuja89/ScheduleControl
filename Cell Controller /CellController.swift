@@ -6,4 +6,20 @@
 //  Copyright © 2018 Parth Ahuja. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CellController: UITableViewCell {
+    //Spot A data
+    @IBOutlet weak var time_A: UITextField!
+    @IBOutlet weak var minutes_A: UITextField!
+    
+    //Spot B data
+    @IBOutlet weak var time_B: UITextField!
+    @IBOutlet weak var minutes_B: UITextField!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+}
+
