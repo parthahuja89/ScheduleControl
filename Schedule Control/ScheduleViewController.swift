@@ -14,6 +14,8 @@ class FrontViewController: UITableViewController {
     var data = [Data_Model]()
     var firstcall = true;
     
+    
+    //ADDING CELLS
     @IBAction func buttonPress(_ sender: Any) {
         //resetting data
         
@@ -22,8 +24,7 @@ class FrontViewController: UITableViewController {
         //get last cell post update
         //let indexPath = IndexPath(row: count.count, section: 0)
         
-        count.append("_")
-        tableView.reloadData()
+       
         
         for x in data{
             print(x.spot)
@@ -31,6 +32,8 @@ class FrontViewController: UITableViewController {
             print(x.minutes)
             
         }
+        count.append("_")
+        tableView.reloadData()
 
         //resetting model for redudancy 
         data.removeAll()
