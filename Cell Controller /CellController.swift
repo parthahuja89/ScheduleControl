@@ -17,9 +17,7 @@ class CellController: UITableViewCell {
     @IBOutlet weak var time_B: UITextField!
     @IBOutlet weak var minutes_B: UITextField!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+   
     
 }
 

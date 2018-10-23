@@ -10,8 +10,9 @@ import UIKit
 
 class FrontViewController: UITableViewController {
     //this stores the number of rows
-    var count = ["_"]
-    var data = [Data_Model]()
+    var count = [String]()
+    var data_a = [Data_Model]()
+    var data_b = [Data_Model]()
     var firstcall = true;
     
     
@@ -24,21 +25,36 @@ class FrontViewController: UITableViewController {
         //get last cell post update
         //let indexPath = IndexPath(row: count.count, section: 0)
         
-       
+        count.append("_")
+        tableView.reloadData()
         
-        for x in data{
+        for x in data_a{
             print(x.spot)
             print(x.hour )
             print(x.minutes)
             
         }
-        count.append("_")
-        tableView.reloadData()
+        //add new row
+   
 
         //resetting model for redudancy 
-        data.removeAll()
+        data_a.removeAll()
+        data_b.removeAll()
         }
 
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("Navigating to next page")
+        count.append("_")
+        tableView.reloadData()
+        
+        for x in data_a{
+            print(x.spot)
+            print(x.hour )
+            print(x.minutes)
+            
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,14 +86,14 @@ class FrontViewController: UITableViewController {
             data_A.hour = Int(cell.time_A.text!)
             data_A.minutes = Int(cell.minutes_A.text!)
             
-            data.append(data_A)
+            data_a.append(data_A)
             
             let data_B = Data_Model()
             data_B.spot = "B"
             data_B.hour = Int(cell.time_B.text!)
             data_B.minutes = Int(cell.minutes_B.text!)
             
-            data.append(data_B)
+            data_b.append(data_B)
             
         return cell
 }

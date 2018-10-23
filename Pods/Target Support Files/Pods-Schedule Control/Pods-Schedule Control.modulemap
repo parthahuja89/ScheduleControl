@@ -1,0 +1,6 @@
+framework module Pods_Schedule_Control {
+  umbrella header "Pods-Schedule Control-umbrella.h"
+
+  export *
+  module * { export * }
+}

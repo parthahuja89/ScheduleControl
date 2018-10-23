@@ -106,6 +106,7 @@
                     <navigationItem key="navigationItem" id="2Ow-xy-zLW">
                         <barButtonItem key="leftBarButtonItem" title="&gt;" id="ouH-9X-6T2">
                             <connections>
+                                <action selector="navigate_button:" destination="mzb-8Q-28z" id="nhJ-5H-WH3"/>
                                 <segue destination="9hH-WZ-9Rz" kind="presentation" id="l36-Vj-wqJ"/>
                             </connections>
                         </barButtonItem>
