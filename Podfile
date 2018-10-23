@@ -5,16 +5,6 @@ target 'Schedule Control' do
   use_frameworks!
 
 
+pod 'RealmSwift'
 
-  target 'Schedule ControlTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'Schedule ControlUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-pod 'RealmSwift' 
 end

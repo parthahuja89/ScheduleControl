@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class FrontViewController: UITableViewController {
     //this stores the number of rows
