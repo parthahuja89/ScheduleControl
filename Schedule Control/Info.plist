@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The current user location is required to predict next schedule point.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The current user location is required to predict next schedule point.</string>
 </dict>
 </plist>

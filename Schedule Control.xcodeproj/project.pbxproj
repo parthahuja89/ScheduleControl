@@ -9,14 +9,20 @@
 /* Begin PBXBuildFile section */
 		9E33F91801E677504F495216 /* Pods_Schedule_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425467A1D5AD8EE2B62CC20A /* Pods_Schedule_Control.framework */; };
 		DA29681321741C2A004DE87B /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29681221741C2A004DE87B /* CellController.swift */; };
+		DA39D549225DAD61001E5B0C /* time_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39D548225DAD61001E5B0C /* time_popup.swift */; };
+		DA39D54C225DCA96001E5B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA39D54A225DCA96001E5B0C /* Main.storyboard */; };
+		DA39D552225DCDC6001E5B0C /* architectural-design-architecture-building-1774931.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA39D551225DCDC6001E5B0C /* architectural-design-architecture-building-1774931.jpg */; };
+		DA39D554225DCEF8001E5B0C /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = DA39D553225DCEF7001E5B0C /* success.png */; };
 		DA8D931721743F2700D2728D /* Data_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D931621743F2700D2728D /* Data_Model.swift */; };
 		DA9BE6E32152E8CE004FA6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BE6E22152E8CE004FA6C8 /* AppDelegate.swift */; };
 		DA9BE6E52152E8CE004FA6C8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BE6E42152E8CE004FA6C8 /* ScheduleViewController.swift */; };
-		DA9BE6E82152E8CE004FA6C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9BE6E62152E8CE004FA6C8 /* Main.storyboard */; };
 		DA9BE6EA2152E8CE004FA6C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9BE6E92152E8CE004FA6C8 /* Assets.xcassets */; };
 		DA9BE6ED2152E8CE004FA6C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9BE6EB2152E8CE004FA6C8 /* LaunchScreen.storyboard */; };
 		DA9BE6F82152E8CE004FA6C8 /* Schedule_ControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BE6F72152E8CE004FA6C8 /* Schedule_ControlTests.swift */; };
 		DA9BE7032152E8CE004FA6C8 /* Schedule_ControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BE7022152E8CE004FA6C8 /* Schedule_ControlUITests.swift */; };
+		DABDB8DD2182291D0068E3B9 /* post_setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB8DC2182291D0068E3B9 /* post_setup.swift */; };
+		DAE4AF6A21857B13000A5366 /* first.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE4AF6921857B13000A5366 /* first.swift */; };
+		DAE5E08621856F6000E44714 /* attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5E08521856F6000E44714 /* attributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +48,15 @@
 		989F62EC5D4A6A43B18072EF /* Pods-Schedule Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedule Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Schedule Control/Pods-Schedule Control.release.xcconfig"; sourceTree = "<group>"; };
 		AE1567F8E26DEDBB0778DC3F /* Pods_Schedule_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schedule_ControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA29681221741C2A004DE87B /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		DA39D548225DAD61001E5B0C /* time_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = time_popup.swift; sourceTree = "<group>"; };
+		DA39D54B225DCA96001E5B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA39D550225DCC8A001E5B0C /* pexels-photo-1196838.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pexels-photo-1196838.jpeg"; sourceTree = "<group>"; };
+		DA39D551225DCDC6001E5B0C /* architectural-design-architecture-building-1774931.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "architectural-design-architecture-building-1774931.jpg"; path = "../../../../../Downloads/architectural-design-architecture-building-1774931.jpg"; sourceTree = "<group>"; };
+		DA39D553225DCEF7001E5B0C /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = success.png; path = ../../../../../Downloads/success.png; sourceTree = "<group>"; };
 		DA8D931621743F2700D2728D /* Data_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_Model.swift; sourceTree = "<group>"; };
 		DA9BE6DF2152E8CE004FA6C8 /* Schedule Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schedule Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9BE6E22152E8CE004FA6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA9BE6E42152E8CE004FA6C8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		DA9BE6E72152E8CE004FA6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA9BE6E92152E8CE004FA6C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9BE6EC2152E8CE004FA6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA9BE6EE2152E8CE004FA6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +67,9 @@
 		DA9BE7022152E8CE004FA6C8 /* Schedule_ControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule_ControlUITests.swift; sourceTree = "<group>"; };
 		DA9BE7042152E8CE004FA6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9BE7102152E948004FA6C8 /* Schedule Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Schedule Control.entitlements"; sourceTree = "<group>"; };
+		DABDB8DC2182291D0068E3B9 /* post_setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post_setup.swift; sourceTree = "<group>"; };
+		DAE4AF6921857B13000A5366 /* first.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first.swift; sourceTree = "<group>"; };
+		DAE5E08521856F6000E44714 /* attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attributes.swift; sourceTree = "<group>"; };
 		E5DA408F017B8A15C9BE31D2 /* Pods_Schedule_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schedule_ControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,10 +126,21 @@
 			path = "Cell Controller ";
 			sourceTree = "<group>";
 		};
+		DA39D54D225DCC2F001E5B0C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				DA39D553225DCEF7001E5B0C /* success.png */,
+				DA39D551225DCDC6001E5B0C /* architectural-design-architecture-building-1774931.jpg */,
+				DA39D550225DCC8A001E5B0C /* pexels-photo-1196838.jpeg */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		DA8D931521743F1400D2728D /* Data Model  */ = {
 			isa = PBXGroup;
 			children = (
 				DA8D931621743F2700D2728D /* Data_Model.swift */,
+				DAE5E08521856F6000E44714 /* attributes.swift */,
 			);
 			path = "Data Model ";
 			sourceTree = "<group>";
@@ -124,6 +148,8 @@
 		DA9BE6D62152E8CE004FA6C8 = {
 			isa = PBXGroup;
 			children = (
+				DAE5E08221856EEA00E44714 /* landing */,
+				DABDB8DB218228C20068E3B9 /* post-setup */,
 				DA8D931521743F1400D2728D /* Data Model  */,
 				DA29680F21741B34004DE87B /* Cell Controller  */,
 				DA9BE6E12152E8CE004FA6C8 /* Schedule Control */,
@@ -148,13 +174,15 @@
 		DA9BE6E12152E8CE004FA6C8 /* Schedule Control */ = {
 			isa = PBXGroup;
 			children = (
+				DA39D54D225DCC2F001E5B0C /* assets */,
+				DA39D54A225DCA96001E5B0C /* Main.storyboard */,
 				DA9BE6E42152E8CE004FA6C8 /* ScheduleViewController.swift */,
 				DA9BE7102152E948004FA6C8 /* Schedule Control.entitlements */,
 				DA9BE6E22152E8CE004FA6C8 /* AppDelegate.swift */,
-				DA9BE6E62152E8CE004FA6C8 /* Main.storyboard */,
 				DA9BE6E92152E8CE004FA6C8 /* Assets.xcassets */,
 				DA9BE6EB2152E8CE004FA6C8 /* LaunchScreen.storyboard */,
 				DA9BE6EE2152E8CE004FA6C8 /* Info.plist */,
+				DA39D548225DAD61001E5B0C /* time_popup.swift */,
 			);
 			path = "Schedule Control";
 			sourceTree = "<group>";
@@ -175,6 +203,22 @@
 				DA9BE7042152E8CE004FA6C8 /* Info.plist */,
 			);
 			path = "Schedule ControlUITests";
+			sourceTree = "<group>";
+		};
+		DABDB8DB218228C20068E3B9 /* post-setup */ = {
+			isa = PBXGroup;
+			children = (
+				DABDB8DC2182291D0068E3B9 /* post_setup.swift */,
+			);
+			name = "post-setup";
+			sourceTree = "<group>";
+		};
+		DAE5E08221856EEA00E44714 /* landing */ = {
+			isa = PBXGroup;
+			children = (
+				DAE4AF6921857B13000A5366 /* first.swift */,
+			);
+			name = landing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +341,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA39D54C225DCA96001E5B0C /* Main.storyboard in Resources */,
 				DA9BE6ED2152E8CE004FA6C8 /* LaunchScreen.storyboard in Resources */,
+				DA39D554225DCEF8001E5B0C /* success.png in Resources */,
 				DA9BE6EA2152E8CE004FA6C8 /* Assets.xcassets in Resources */,
-				DA9BE6E82152E8CE004FA6C8 /* Main.storyboard in Resources */,
+				DA39D552225DCDC6001E5B0C /* architectural-design-architecture-building-1774931.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,8 +420,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA29681321741C2A004DE87B /* CellController.swift in Sources */,
+				DABDB8DD2182291D0068E3B9 /* post_setup.swift in Sources */,
 				DA8D931721743F2700D2728D /* Data_Model.swift in Sources */,
 				DA9BE6E52152E8CE004FA6C8 /* ScheduleViewController.swift in Sources */,
+				DAE5E08621856F6000E44714 /* attributes.swift in Sources */,
+				DA39D549225DAD61001E5B0C /* time_popup.swift in Sources */,
+				DAE4AF6A21857B13000A5366 /* first.swift in Sources */,
 				DA9BE6E32152E8CE004FA6C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,10 +462,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA9BE6E62152E8CE004FA6C8 /* Main.storyboard */ = {
+		DA39D54A225DCA96001E5B0C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DA9BE6E72152E8CE004FA6C8 /* Base */,
+				DA39D54B225DCA96001E5B0C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

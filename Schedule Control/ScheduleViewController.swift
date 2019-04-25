@@ -14,50 +14,33 @@ class FrontViewController: UITableViewController {
     var count = [String]()
     var data_a = [Data_Model]()
     var data_b = [Data_Model]()
-    var firstcall = true;
-    
-    
-    //ADDING CELLS
-    @IBAction func buttonPress(_ sender: Any) {
-        //resetting data
-        
-        print("Button pressed!")
-       
-        //get last cell post update
-        //let indexPath = IndexPath(row: count.count, section: 0)
-        
-        count.append("_")
-        tableView.reloadData()
-        
-        for x in data_a{
-            print(x.spot)
-            print(x.hour )
-            print(x.minutes)
-            
-        }
-        //add new row
-   
 
-        //resetting model for redudancy 
+    let realm = try! Realm()
+    
+    //load in CRUD when appeared
+    override func viewWillAppear(_ animated: Bool) {
         data_a.removeAll()
         data_b.removeAll()
-        }
-
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        print("Navigating to next page")
-        count.append("_")
-        tableView.reloadData()
         
-        for x in data_a{
-            print(x.spot)
-            print(x.hour )
-            print(x.minutes)
+        print("trying to get data from realm")
+        let data = realm.objects(Data_Model.self)
+        for x in data{ 
+                if(x.spot == "A"){
+                    data_a.append(x)
+                }else{
+                    data_b.append(x)
+                }
             
         }
+        tableView.reloadData()
+    }
+
+    //Store all the data in rows before navigating to next screen
+    override func viewWillDisappear(_ animated: Bool) {
     }
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
         
         
@@ -73,31 +56,31 @@ class FrontViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return count.count
+        return data_a.count
     }
     
+    //populate data_a and data_b arrays 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
         UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Schedule_Cell", for: indexPath) as! CellController
-    
-            //custom data models
-            let data_A = Data_Model()
-            data_A.spot = "A"
-            data_A.hour = Int(cell.time_A.text!)
-            data_A.minutes = Int(cell.minutes_A.text!)
+           
+            //get the data for each row from the back-end
+            let curr_data = data_a[indexPath.row]
             
-            data_a.append(data_A)
+            cell.test_A.text = String(curr_data.hour.value!) + ":" + String(curr_data.minutes.value!)
             
-            let data_B = Data_Model()
-            data_B.spot = "B"
-            data_B.hour = Int(cell.time_B.text!)
-            data_B.minutes = Int(cell.minutes_B.text!)
+            let curr_data_b = data_b[indexPath.row]
             
-            data_b.append(data_B)
+            cell.test_B.text = String(curr_data_b.hour.value!) + ":" + String(curr_data_b.minutes.value!)
             
         return cell
 }
+    
+    
+    
+    //Deletes cells
+    // TODO: Implement deleting in back-end
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             count.remove(at: indexPath.row)
@@ -109,6 +92,7 @@ class FrontViewController: UITableViewController {
         }
         
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Schedule_Cell", for: indexPath) as! CellController

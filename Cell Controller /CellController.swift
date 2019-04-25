@@ -9,15 +9,9 @@
 import UIKit
 
 class CellController: UITableViewCell {
-    //Spot A data
-    @IBOutlet weak var time_A: UITextField!
-    @IBOutlet weak var minutes_A: UITextField!
     
-    //Spot B data
-    @IBOutlet weak var time_B: UITextField!
-    @IBOutlet weak var minutes_B: UITextField!
-    
-   
+    //NEW TESTING ENVIRONMENT
+    @IBOutlet weak var test_A: UITextField!
+    @IBOutlet weak var test_B: UITextField!
     
 }
-

@@ -7,9 +7,13 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Data_Model{
-    var hour : Int? = 0
-    var minutes : Int? = 0
-    var spot : String? = ""
+@objcMembers
+class Data_Model: Object{
+     dynamic var hour = RealmOptional<Int>()
+     dynamic var minutes = RealmOptional<Int>()
+     dynamic var assigned : Bool? = false
+     @objc dynamic var postfix : String? = ""
+     @objc dynamic var spot : String? = ""
 }
